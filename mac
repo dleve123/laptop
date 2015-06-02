@@ -143,9 +143,6 @@ brew_install_or_upgrade 'node'
 brew_install_or_upgrade 'rbenv'
 brew_install_or_upgrade 'ruby-build'
 
-# shellcheck disable=SC2016
-append_to_bashrc 'eval "$(rbenv init - --no-rehash bash)"' 1
-
 brew_install_or_upgrade 'openssl'
 brew unlink openssl && brew link openssl --force
 brew_install_or_upgrade 'libyaml'
